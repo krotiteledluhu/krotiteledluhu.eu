@@ -38,16 +38,22 @@ $window = $(window),
 $review_image;
 
 $document.ready(() => {
+	$('.datepicker').datepicker();
+	/*
 	var $dtpckr = $('.datepicker'),
+	*/
+	 */
 		$bodyhtml = $('html, body');
-	$dtpckr.datepicker({
+	/* $dtpckr.datepicker({
 		language: 'cs'
 	});
+
 
 	$dtpckr.next('.input-group-addon').click((e) => {
 		e.preventDefault();
 		$dtpckr.datepicker('show');
 	});
+	 */
 
 	$review_image = $('.review__image img');
 
