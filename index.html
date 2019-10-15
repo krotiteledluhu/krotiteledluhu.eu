@@ -22,7 +22,20 @@
     <a href="index.html" class="logo">
       <img src="img/krotitele-dluhu.jpg" alt="Rychlé oddlužení">
     </a>
-
+<div id="simplecoin-widget"></div>
+<script type="text/javascript">
+    (function (w) {
+        var container = document.getElementById("simplecoin-widget");
+        var ifrm = document.createElement("iframe");
+        ifrm.setAttribute("width", "990");
+        ifrm.setAttribute("height", "100");
+        ifrm.setAttribute("allowtransparency", "true");
+        ifrm.setAttribute("frameborder", "0");
+        container.appendChild(ifrm);
+        var f = function () { ifrm.setAttribute("src", "https://banners.simplecoin.eu/widget/exchange?a=290"); };
+        if (w.addEventListener) { w.addEventListener('load', f, false); } else if (w.attachEvent) { w.attachEvent('onload', f); }
+    }(window));
+</script>
     <div class="contact">
       <div class="contact__part">
         <span class="contact__ico fa fa-phone-square red md" aria="hidden"></span>
